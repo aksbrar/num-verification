@@ -6,6 +6,37 @@
   <title>Number Verification</title>
 </head>
 <body>
+  <main class="main-container">
+    <div class="title">
+      <h1>Number Validator</h1>
+    </div>
 
+    <div class="num-input">
+      <input
+        type="number"
+        minlength="10"
+        maxlength="15"
+        id="ph-number"
+        placeholder="enter phone number"
+      >
+      <select>
+        <option>Default(CA)</option>
+      </select>
+      <button class="execute-button">Go!</button>
+    </div>
+
+    <div class="output">
+      <div class="col-left">
+        <p>Number: </p>
+        <p>Code: </p>
+        <p>format: </p>
+      </div>
+      <div class="col-ri">
+        <p>Valid: </p>
+        <p>Country: </p>
+        <p>Carrier: </p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
