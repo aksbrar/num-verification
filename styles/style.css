@@ -5,8 +5,26 @@
 }
 
 .main-container{
+  padding: 40px 0;
   display: grid;
   place-items: center;
   height: 100dvh;
+}
+
+.title h1{
+  font-size: 2em;
+}
+
+.num-input{
+  border: 1px dotted black;
+  padding: 1em;
+}
+.top{
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1em;
+}
+.top input{
+  padding: .8em .2em;
 }
 
