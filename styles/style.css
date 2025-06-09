@@ -5,14 +5,17 @@
 }
 
 .main-container{
-  padding: 40px 0;
-  display: grid;
-  place-items: center;
-  height: 100dvh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
 }
 
 .title h1{
   font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .num-input{
@@ -32,3 +35,17 @@
   width: 100%;
   padding: .8em .2em;
 }
+
+.output{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 0rem;
+}
+
+.col-left,
+.col-ri{
+  padding: 10px;
+  line-height: 2rem;
+}
+

@@ -12,23 +12,25 @@
       <h1>Number Validator</h1>
     </div>
 
-    <div class="num-input">
+    <form class="num-input">
       <div class="top">
         <input
-          type="number"
-          minlength="10"
-          maxlength="15"
+          type="tel"
+          min="10"
+          max="15"
+          pattern="[0-9]{10,15}"
           id="ph-number"
+          required
           placeholder="enter phone number"
         >
-        <select>
+        <select required>
           <option>Default(CA)</option>
         </select>
       </div>
       <div class="bottom">
-        <button class="execute-button">Go!</button>
+        <button type="submit" class="execute-button">Go!</button>
       </div>
-    </div>
+    </form>
     
     <div class="output">
       <div class="col-left">
