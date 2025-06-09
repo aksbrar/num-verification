@@ -20,11 +20,15 @@
   padding: 1em;
 }
 .top{
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   display: flex;
   gap: 1em;
 }
 .top input{
-  padding: .8em .2em;
+  padding: .8em .8em;
 }
 
+.bottom button{
+  width: 100%;
+  padding: .8em .2em;
+}
