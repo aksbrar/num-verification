@@ -19,12 +19,12 @@ counOption.innerHTML += countries.map(c => {
 }).join("")
 
 //get the data from the api
-form.addEventListener('submit', function(e){
-  e.preventDefault
+form.addEventListener('submit', async function(e){
+  e.preventDefault()
   const number =  numberInput.value
   const code = counOption.value
 
-  const result = verifynumber(number, code)
+  const result = await verifynumber(number, code)
   console.log(result)
 })
 
