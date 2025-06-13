@@ -26,6 +26,21 @@ form.addEventListener('submit', async function(e){
 
   const result = await verifynumber(number, code)
   console.log(result)
+ 
+  // update the dom with result 
+  const outResult = document.querySelector(".output")
+  outResult.innerHTML = `  
+      <div class="col-left">
+        <p>Number: ${result.local_format}</p>
+        <p>Code: ${result.country_prefix}</p>
+        <p>Location: ${result.location}</p>
+      </div>
+      <div class="col-ri">
+        <p>Valid: ${result.valid}</p>
+        <p>Country: ${result.country_name}</p>
+        <p>Carrier: ${result.carrier}</p>
+      </div>`
+
 })
 
 
