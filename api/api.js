@@ -1,5 +1,5 @@
 // api key, not using any eniornment safe for this, so will remove after putting it into github
-const api_key=f982b57c4c00bdd8c3092ba573e47396
+const api_key="f982b57c4c00bdd8c3092ba573e47396"
 const url = "http://apilayer.net/api/validate"
 
 // function to verify and return 
@@ -11,7 +11,7 @@ export async function verifynumber(num, code) {
     
     const data = await response.json
     return data
-    
+
   } catch (error){
     console.log(`Api call failed, ${error}`)
     throw error
