@@ -1,8 +1,11 @@
 // Imports
 import { countries } from "./country.js";
+import {verifynumber} from '../api/api.js';
 
 // constant Variables
 const counOption = document.querySelector("#options");
+const form = document.querySelector(".num-input")
+const numberInput = document.querySelector("#ph-number")
 
 // add country names and codes into options
 counOption.innerHTML += countries.map(c => {
@@ -14,6 +17,17 @@ counOption.innerHTML += countries.map(c => {
     return `<option value="${c.code}">${c.name}(${c.code})</option>`
   }
 }).join("")
+
+//get the data from the api
+form.addEventListener('submit', function(e){
+  e.preventDefault
+  const number =  numberInput.value
+  const code = counOption.value
+
+  const result = verifynumber(number, code)
+  console.log(result)
+})
+
 
 
 
