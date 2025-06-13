@@ -9,7 +9,7 @@ export async function verifynumber(num, code) {
     const response = await fetch(`${url}?access_key=${api_key}&number=${num}&country_code=${code}&format=1`)
     if(!response.ok) throw new Error("network response is not okay");
     
-    const data = await response.json
+    const data = await response.json()
     return data
 
   } catch (error){
