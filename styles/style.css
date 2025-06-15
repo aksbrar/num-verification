@@ -16,9 +16,6 @@ html, body {
   width: 100%;
   max-width: 500px;
 }
-select{
-  width: 100%;
-}
 .title h1{
   font-size: 2em;
   margin-bottom: 40px;
@@ -36,6 +33,10 @@ select{
 }
 .top input{
   padding: .8em .8em;
+  width: 100%;
+}
+select{
+  width: 100%;
 }
 
 .bottom button{
