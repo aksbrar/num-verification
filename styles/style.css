@@ -3,15 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.main-container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1em;
 }
 
+.main-container {
+  width: 100%;
+  max-width: 500px;
+}
+select{
+  width: 100%;
+}
 .title h1{
   font-size: 2em;
   margin-bottom: 40px;
